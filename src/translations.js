@@ -67,6 +67,10 @@ export const translations = {
                 smartstock: {
                     title: "SmartStock",
                     desc: "Sistema de gestión de inventario y stock inteligente."
+                },
+                utopia_gym: {
+                    title: "Utopia Gym - Software de Gestión",
+                    desc: "Sistema de gestión integral para gimnasios con control de socios y pagos."
                 }
             }
         },
@@ -145,6 +149,10 @@ export const translations = {
                 smartstock: {
                     title: "SmartStock",
                     desc: "Smart inventory and stock management system."
+                },
+                utopia_gym: {
+                    title: "Utopia Gym - Management Software",
+                    desc: "Comprehensive management system for gyms with member and payment control."
                 }
             }
         },
@@ -223,6 +231,10 @@ export const translations = {
                 smartstock: {
                     title: "SmartStock",
                     desc: "スマート在庫管理システム。"
+                },
+                utopia_gym: {
+                    title: "Utopia Gym - 管理ソフトウェア",
+                    desc: "会員および支払い管理機能を備えたジム向けの包括的な管理システム。"
                 }
             }
         },

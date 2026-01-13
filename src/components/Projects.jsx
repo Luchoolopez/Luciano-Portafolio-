@@ -1,6 +1,7 @@
 import { useRef } from 'react';
 import { translations } from '../translations';
 import '../index.css';
+import { videoLinks } from '../video/video-muestra';
 
 const Projects = ({ language }) => {
     const t = translations[language].projects;
@@ -15,19 +16,29 @@ const Projects = ({ language }) => {
         { key: 'bahia_finder', repoLink: 'https://github.com/Luchoolopez/BahiaFinder', tags: ['MERN', 'React', 'Node.js', 'MongoDB'] },
         { key: 'flappy', repoLink: 'https://github.com/Luchoolopez/FlappyBird_ReactNative', tags: ['React Native', 'Mobile', 'Game Dev'] },
         { key: 'motolog', repoLink: 'https://github.com/Luchoolopez/MotoLog', tags: ['TypeScript', 'Express', 'React', 'MySQL'] },
-        { key: 'smartstock', repoLink: 'https://github.com/RaphaelNicaise/Metodologia-de-Sistemas-2', tags: ['TypeScript', 'Express', 'React', 'MySQL'] }
+        { key: 'smartstock', repoLink: 'https://github.com/RaphaelNicaise/Metodologia-de-Sistemas-2', tags: ['TypeScript', 'Express', 'React', 'MySQL'] },
+        { key: 'utopia_gym', repoLink: 'https://github.com/Luchoolopez/software-gimnasio.git', tags: ['JavaScript', 'Node.js', 'React', 'MySQL'] }
     ];
+
+    const getEmbedUrl = (url) => {
+        if (!url) return null;
+        const videoIdMatch = url.match(/(?:youtu\.be\/|youtube\.com\/(?:.*v=|.*\/))([^&?]+)/);
+        const videoId = videoIdMatch ? videoIdMatch[1] : null;
+        return videoId ? `https://www.youtube.com/embed/${videoId}` : null;
+    };
 
     const projects = projectsData.map(p => ({
         ...p,
         title: items[p.key].title,
-        description: items[p.key].desc
+        description: items[p.key].desc,
+        video: getEmbedUrl(videoLinks[p.key])
     }));
+
 
     const scroll = (direction) => {
         if (scrollRef.current) {
             const { current } = scrollRef;
-            const scrollAmount = 380; // Card width (350) + gap (30)
+            const scrollAmount = 380;
             const maxScrollLeft = current.scrollWidth - current.clientWidth;
 
             if (direction === 'left') {
@@ -39,7 +50,6 @@ const Projects = ({ language }) => {
                 }
             } else {
                 if (current.scrollLeft >= maxScrollLeft - 10) { // Tolerance
-                    // Loop to start
                     current.scrollTo({ left: 0, behavior: 'smooth' });
                 } else {
                     current.scrollBy({ left: scrollAmount, behavior: 'smooth' });
@@ -117,9 +127,28 @@ const Projects = ({ language }) => {
                                         marginBottom: '1.5rem',
                                         display: 'flex',
                                         alignItems: 'center',
-                                        justifyContent: 'center'
+                                        justifyContent: 'center',
+                                        overflow: 'hidden',
+                                        padding: project.video ? '0' : undefined
                                     }}>
-                                        <span style={{ fontSize: '3rem' }}>🚀</span>
+                                        {project.video ? (
+                                            <iframe
+                                                width="100%"
+                                                height="100%"
+                                                src={project.video}
+                                                title={project.title}
+                                                frameBorder="0"
+                                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                                allowFullScreen
+                                                style={{
+                                                    width: '100%',
+                                                    height: '100%',
+                                                    objectFit: 'cover'
+                                                }}
+                                            />
+                                        ) : (
+                                            <span style={{ fontSize: '3rem' }}>🚀</span>
+                                        )}
                                     </div>
                                     <h3 style={{ fontSize: '1.5rem', marginBottom: '1rem' }}>{project.title}</h3>
                                     <p style={{ color: 'var(--text-secondary)', marginBottom: '1.5rem', flexGrow: 1 }}>
@@ -160,7 +189,6 @@ const Projects = ({ language }) => {
                         </div>
                     </div>
 
-                    {/* Right Button */}
                     <button
                         onClick={() => scroll('right')}
                         style={{ ...arrowStyle, right: '20px' }}
@@ -178,3 +206,4 @@ const Projects = ({ language }) => {
 };
 
 export default Projects;
+
