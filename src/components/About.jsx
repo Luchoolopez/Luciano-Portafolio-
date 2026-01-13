@@ -23,6 +23,7 @@ const About = ({ language }) => {
                     <div className="card">
                         <h3 style={{ fontSize: '1.5rem', marginBottom: '1rem', color: 'var(--accent-primary)' }}>{t.university}</h3>
                         <p style={{ fontSize: '1.1rem', fontWeight: 600, marginBottom: '0.5rem' }}>{t.school_uni}</p>
+                        <p style={{ fontSize: '1rem', fontWeight: 500, marginBottom: '0.5rem', opacity: 0.9 }}>{t.degree_uni}</p>
                         <p style={{ color: 'var(--text-secondary)', marginBottom: '1rem' }}>{t.location_uni}</p>
                         <p style={{ fontSize: '0.9rem', color: 'var(--accent-primary)', fontWeight: 'bold' }}>{t.year_uni}</p>
                         <p>{t.desc_uni}</p>
