@@ -72,6 +72,10 @@ export const translations = {
                 utopia_gym: {
                     title: "Utopia Gym - Software de Gestión",
                     desc: "Sistema de gestión integral para gimnasios con control de socios y pagos."
+                },
+                MisColegios: {
+                    title: "Mis Colegios",
+                    desc: "Plataforma para que docentes organicen mejor sus escuelas y alumnos, con registro de notas y asistencias. Fomenta la digitalización eliminando el papel."
                 }
             }
         },
@@ -155,6 +159,10 @@ export const translations = {
                 utopia_gym: {
                     title: "Utopia Gym - Management Software",
                     desc: "Comprehensive management system for gyms with member and payment control."
+                },
+                MisColegios: {
+                    title: "Mis Colegios",
+                    desc: "Platform for teachers to organize schools and students, tracking grades and attendance. Digitalizes management to replace paper."
                 }
             }
         },
@@ -238,6 +246,10 @@ export const translations = {
                 utopia_gym: {
                     title: "Utopia Gym - 管理ソフトウェア",
                     desc: "会員および支払い管理機能を備えたジム向けの包括的な管理システム。"
+                },
+                MisColegios: {
+                    title: "Mis Colegios",
+                    desc: "教師が学校や生徒を管理し、成績や出席を記録できるプラットフォーム。紙の代わりにデジタル化を推進します。"
                 }
             }
         },

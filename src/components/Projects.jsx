@@ -17,7 +17,8 @@ const Projects = ({ language }) => {
         { key: 'flappy', repoLink: 'https://github.com/Luchoolopez/FlappyBird_ReactNative', tags: ['React Native', 'Mobile', 'Game Dev'] },
         { key: 'motolog', repoLink: 'https://github.com/Luchoolopez/MotoLog', tags: ['TypeScript', 'Express', 'React', 'MySQL'] },
         { key: 'smartstock', repoLink: 'https://github.com/RaphaelNicaise/Metodologia-de-Sistemas-2', tags: ['TypeScript', 'Express', 'React', 'MySQL'] },
-        { key: 'utopia_gym', repoLink: 'https://github.com/Luchoolopez/software-gimnasio.git', tags: ['JavaScript', 'Node.js', 'React', 'MySQL'] }
+        { key: 'utopia_gym', repoLink: 'https://github.com/Luchoolopez/software-gimnasio.git', tags: ['JavaScript', 'Node.js', 'React', 'MySQL'] },
+        { key: 'MisColegios', repoLink: 'https://github.com/Luchoolopez/School_Registry.git', webLink: 'https://miscolegios.vercel.app/', tags: ['TypeScript', 'Express', 'React', 'TailwindCSS'] }
     ];
 
     const getEmbedUrl = (url) => {
