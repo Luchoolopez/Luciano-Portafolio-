@@ -1,7 +1,7 @@
 import React from 'react';
-import cvEng from '../cv/LucianoLopezGonzalezCV-ENG.pdf';
-import cvEsp from '../cv/LucianoLopezGonzalezCV-ESP.pdf';
-import cvJap from '../cv/LucianoLopezGonzalezCV-JAP.pdf';
+import cvEng from '../cv/Luciano_Nicolas_Lopez_Gonzalez_CV_EN.pdf';
+import cvEsp from '../cv/Luciano_Nicolas_Lopez_Gonzalez_CV.pdf';
+import cvJap from '../cv/Luciano_Nicolas_Lopez_Gonzalez_CV_JP.pdf';
 import '../index.css';
 
 const CVModal = ({ isOpen, onClose }) => {
