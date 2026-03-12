@@ -4,5 +4,6 @@ export const videoLinks = {
     bahia_finder: "https://youtu.be/GJXsbXySWYE",
     calc_asistencias: "https://youtu.be/X5n_ifeEuTA",
     utopia_gym: "https://youtu.be/RoBp-KSn-Ac",
-    MisColegios: "https://youtu.be/amfFXj4OBi0"
+    MisColegios: "https://youtu.be/amfFXj4OBi0",
+    stixian: "https://www.youtube.com/watch?v=q6DApMcPYNA"
 };

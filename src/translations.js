@@ -76,6 +76,10 @@ export const translations = {
                 MisColegios: {
                     title: "Mis Colegios",
                     desc: "Plataforma para que docentes organicen mejor sus escuelas y alumnos, con registro de notas y asistencias. Fomenta la digitalización eliminando el papel."
+                },
+                stixian: {
+                    title: "Stixian",
+                    desc: "Sitio web para comprar stickers de catálogo o personalizados. Mi primer trabajo como freelancer."
                 }
             }
         },
@@ -163,6 +167,10 @@ export const translations = {
                 MisColegios: {
                     title: "Mis Colegios",
                     desc: "Platform for teachers to organize schools and students, tracking grades and attendance. Digitalizes management to replace paper."
+                },
+                stixian: {
+                    title: "Stixian",
+                    desc: "Website for buying stickers from catalog or custom orders. My first freelance project."
                 }
             }
         },
@@ -250,6 +258,10 @@ export const translations = {
                 MisColegios: {
                     title: "Mis Colegios",
                     desc: "教師が学校や生徒を管理し、成績や出席を記録できるプラットフォーム。紙の代わりにデジタル化を推進します。"
+                },
+                stixian: {
+                    title: "Stixian",
+                    desc: "カタログまたはカスタムステッカーを購入するためのウェブサイト。私の最初のフリーランス案件。"
                 }
             }
         },
