@@ -19,7 +19,7 @@ const Projects = ({ language }) => {
         { key: 'smartstock', repoLink: 'https://github.com/RaphaelNicaise/Metodologia-de-Sistemas-2', tags: ['TypeScript', 'Express', 'React', 'MySQL'] },
         { key: 'utopia_gym', repoLink: 'https://github.com/Luchoolopez/software-gimnasio.git', tags: ['JavaScript', 'Node.js', 'React', 'MySQL'] },
         { key: 'MisColegios', repoLink: 'https://github.com/Luchoolopez/School_Registry.git', webLink: 'https://miscolegios.vercel.app/', tags: ['TypeScript', 'Express', 'React', 'TailwindCSS'] },
-        { key: 'stixian', tags: ['Freelance', 'Web'] }
+        { key: 'stixian', customPrimaryLink: 'https://stixian.store/', tags: ['Freelance', 'Web'] }
     ];
 
     const getEmbedUrl = (url) => {
@@ -172,6 +172,17 @@ const Projects = ({ language }) => {
                                                 style={{ flex: 1, textAlign: 'center', fontSize: '0.9rem', padding: '0.5rem' }}
                                             >
                                                 {t.view_project}
+                                            </a>
+                                        )}
+                                        {project.customPrimaryLink && (
+                                            <a
+                                                href={project.customPrimaryLink}
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                                className="btn-primary"
+                                                style={{ flex: 1, textAlign: 'center', fontSize: '0.9rem', padding: '0.5rem' }}
+                                            >
+                                                {language === 'en' ? 'Visit website' : language === 'jp' ? 'ウェブサイトを訪問' : 'Visitar sitio web'}
                                             </a>
                                         )}
                                         {project.webLink && (
