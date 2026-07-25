@@ -11,7 +11,7 @@ const About = ({ language }) => {
                 <span className="section-label">01 // {t.title}</span>
                 <h2 className="section-heading">{t.title}</h2>
 
-                <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '40px' }}>
+                <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', gap: '30px' }}>
 
                     <div className="card">
                         <h3 style={{ fontSize: '1.5rem', marginBottom: '1rem', color: 'var(--accent-secondary)' }}>{t.education}</h3>
@@ -28,6 +28,17 @@ const About = ({ language }) => {
                         <p style={{ color: 'var(--text-secondary)', marginBottom: '1rem' }}>{t.location_uni}</p>
                         <p style={{ fontSize: '0.9rem', color: 'var(--accent-primary)', fontWeight: 'bold' }}>{t.year_uni}</p>
                         <p>{t.desc_uni}</p>
+                    </div>
+
+                    <div className="card">
+                        <h3 style={{ fontSize: '1.5rem', marginBottom: '1rem', color: 'var(--accent-primary)' }}>{t.eng_title}</h3>
+                        <p style={{ fontSize: '1.1rem', fontWeight: 600, marginBottom: '0.5rem' }}>{t.eng_school}</p>
+                        <p style={{ fontSize: '1rem', fontWeight: 500, marginBottom: '0.5rem', opacity: 0.9 }}>{t.eng_degree}</p>
+                        <p style={{ color: 'var(--text-secondary)', marginBottom: '1rem' }}>{t.eng_location}</p>
+                        <p style={{ fontSize: '0.9rem', color: 'var(--accent-primary)', fontWeight: 'bold', display: 'flex', alignItems: 'center', gap: '8px' }}>
+                            <span className="status-dot" />{t.eng_year}
+                        </p>
+                        <p>{t.eng_desc}</p>
                     </div>
 
                     <div className="card">
