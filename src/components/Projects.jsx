@@ -82,7 +82,8 @@ const Projects = ({ language }) => {
     return (
         <section id="projects" className="section" style={{ overflow: 'hidden' }}>
             <div className="container" style={{ maxWidth: '100%', padding: '0', position: 'relative' }}>
-                <h2 style={{ fontSize: '2.5rem', marginBottom: '3rem', textAlign: 'center' }}>{t.title}</h2>
+                <span className="section-label" style={{ marginLeft: '20px' }}>02 // {t.title}</span>
+                <h2 className="section-heading" style={{ paddingLeft: '20px' }}>{t.title}</h2>
 
                 <div className="scroller-wrapper" style={{ position: 'relative', maxWidth: '1200px', margin: '0 auto' }}>
                     {/* Left Button */}
@@ -124,7 +125,7 @@ const Projects = ({ language }) => {
                                 >
                                     <div style={{
                                         height: '180px',
-                                        background: `linear-gradient(135deg, rgba(59, 130, 246, 0.2), rgba(139, 92, 246, 0.2))`,
+                                        background: `linear-gradient(135deg, rgba(255, 46, 46, 0.18), rgba(193, 18, 31, 0.28))`,
                                         borderRadius: '8px',
                                         marginBottom: '1.5rem',
                                         display: 'flex',
@@ -158,7 +159,7 @@ const Projects = ({ language }) => {
                                     </p>
                                     <div style={{ marginBottom: '1.5rem', display: 'flex', gap: '8px', flexWrap: 'wrap' }}>
                                         {project.tags.map((tag, idx) => (
-                                            <span key={idx} style={{ fontSize: '0.75rem', color: 'var(--accent-primary)' }}>#{tag}</span>
+                                            <span key={idx} style={{ fontFamily: 'var(--font-mono)', fontSize: '0.75rem', color: 'var(--accent-primary)' }}>#{tag}</span>
                                         ))}
                                     </div>
 

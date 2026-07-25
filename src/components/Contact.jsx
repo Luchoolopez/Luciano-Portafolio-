@@ -7,7 +7,8 @@ const Contact = ({ language }) => {
     return (
         <footer id="contact" className="section" style={{ background: 'var(--bg-secondary)', padding: '50px 0', textAlign: 'center' }}>
             <div className="container">
-                <h2 style={{ fontSize: '2rem', marginBottom: '2rem' }}>{t.title}</h2>
+                <span className="section-label" style={{ justifyContent: 'center' }}>03 // {t.title}</span>
+                <h2 className="section-heading" style={{ marginBottom: '1.5rem' }}>{t.title}</h2>
                 <p style={{ color: 'var(--text-secondary)', marginBottom: '2rem' }}>
                     {t.text}
                 </p>

@@ -8,7 +8,8 @@ const About = ({ language }) => {
     return (
         <section id="about" className="section" style={{ background: 'var(--bg-secondary)', overflow: 'hidden' }}>
             <div className="container">
-                <h2 style={{ fontSize: '2.5rem', marginBottom: '3rem', textAlign: 'center' }}>{t.title}</h2>
+                <span className="section-label">01 // {t.title}</span>
+                <h2 className="section-heading">{t.title}</h2>
 
                 <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '40px' }}>
 

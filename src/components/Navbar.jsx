@@ -38,17 +38,17 @@ const Navbar = ({ language, setLanguage }) => {
             transition: 'all 0.3s ease'
         }}>
             <div className="container" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-                <h2 style={{ fontSize: '1.5rem', fontWeight: '700', margin: 0, zIndex: 1002 }}>
-                    <span className="gradient-text">Luciano</span>
+                <h2 style={{ fontFamily: 'var(--font-mono)', fontSize: '1.4rem', fontWeight: '700', margin: 0, zIndex: 1002, letterSpacing: '-0.02em' }}>
+                    Luciano<span style={{ color: 'var(--red)' }}>.</span>
                 </h2>
 
                 {/* Desktop Menu */}
                 <div className="desktop-menu">
                     <ul style={{ display: 'flex', gap: '30px', listStyle: 'none', margin: 0 }}>
-                        <li><a href="#hero" style={{ fontWeight: 500 }}>{t.home}</a></li>
-                        <li><a href="#about" style={{ fontWeight: 500 }}>{t.about}</a></li>
-                        <li><a href="#projects" style={{ fontWeight: 500 }}>{t.projects}</a></li>
-                        <li><a href="#contact" style={{ fontWeight: 500 }}>{t.contact}</a></li>
+                        <li><a href="#hero" className="nav-link">{t.home}</a></li>
+                        <li><a href="#about" className="nav-link">{t.about}</a></li>
+                        <li><a href="#projects" className="nav-link">{t.projects}</a></li>
+                        <li><a href="#contact" className="nav-link">{t.contact}</a></li>
                     </ul>
 
                     <div style={{ display: 'flex', gap: '10px' }}>
